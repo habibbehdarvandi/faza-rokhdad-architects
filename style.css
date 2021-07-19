@@ -2,6 +2,7 @@
     --primary-color:#006666;
     --text-color:#231f20;
     --secondary-color:#996666;
+    --gray-color:#868e96;
     --bg-color:#f1f1f1;
     --box-shadow:0 2px 8px 2px rgba(0,0,0,0.2);
 }
@@ -47,6 +48,7 @@
 }
 body{
     direction: rtl;
+    color: var(--text-color);
 }
 img{
     width: 100%;
@@ -142,6 +144,114 @@ img{
 .convert-white{
     filter: invert(1);
 }
+.m-1{
+    margin: 1rem;
+}
+.m-2{
+    margin: 2rem;
+}
+.m-3{
+    margin: 3rem;
+}
+.m-4{
+    margin: 4rem;
+}
+.m-5{
+    margin: 5rem;
+}
+.m-6{
+    margin: 6rem;
+}
+.mx-1{
+    margin: 0 1rem;
+}
+.mx-2{
+    margin: 0 2rem;
+}
+.mx-3{
+    margin: 0 3rem;
+}
+.mx-4{
+    margin: 0 4rem;
+}
+.mx-5{
+    margin: 0 5rem;
+}
+.mx-6{
+    margin: 0 6rem;
+}
+.my-1{
+    margin: 1rem 0;
+}
+.my-2{
+    margin: 2rem 0;
+}
+.my-3{
+    margin: 3rem 0;
+}
+.my-4{
+    margin: 4rem 0;
+}
+.my-5{
+    margin: 5rem 0;
+}
+.my-6{
+    margin: 6rem 0;
+}
+.p-1{
+    margin: 1rem;
+}
+.p-2{
+    margin: 2rem;
+}
+.p-3{
+    margin: 3rem;
+}
+.p-4{
+    margin: 4rem;
+}
+.p-5{
+    margin: 5rem;
+}
+.p-6{
+    margin: 6rem;
+}
+.px-1{
+    margin: 0 1rem;
+}
+.px-2{
+    margin: 0 2rem;
+}
+.px-3{
+    margin: 0 3rem;
+}
+.px-4{
+    margin: 0 4rem;
+}
+.px-5{
+    margin: 0 5rem;
+}
+.px-6{
+    margin: 0 6rem;
+}
+.py-1{
+    margin: 1rem 0;
+}
+.py-2{
+    margin: 2rem 0;
+}
+.py-3{
+    margin: 3rem 0;
+}
+.py-4{
+    margin: 4rem 0;
+}
+.py-5{
+    margin: 5rem 0;
+}
+.py-6{
+    margin: 6rem 0;
+}
 
 #intro{
     width: 100%;
@@ -196,7 +306,7 @@ nav{
 .show li a{
     color: var(--text-color);
 }
-
+/* 
 .toggle-mod{
     width: 34px;
     height: 34px;
@@ -207,7 +317,7 @@ nav{
     position: fixed;
     bottom: 15px;
     right: 15px;
-}
+} */
 .intro{
     display: flex;
     flex-direction: column;
@@ -215,6 +325,7 @@ nav{
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin: 3rem 0;
 }
 .intro-logotype{
     width: 60%;
@@ -227,4 +338,147 @@ nav{
     color: #fff;
     margin: 1rem 0;
     text-align: center;
+}
+
+
+/* who we are */
+
+.section{
+    padding: 0 0.5rem;
+}
+
+.title{
+    display: inline-block;
+    margin: 2rem 0;
+}
+.title::before{
+    content: " ";
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid var(--primary-color);
+    width: 70px;
+    padding: 0.5rem 0;
+}
+/* ********************************************************** */
+#whoWeAre{
+    margin: 0.5rem;
+}
+.whoWeAre{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+/* ********************************************************** */
+.whoWeAre-image-background{
+    width: 100%;
+    padding: 2rem 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.whoWeAre-image-background img{
+    width: 90%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    object-fit: cover;
+}
+.whoWeAre-image-background img:nth-child(1){
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.whoWeAre-image-background img:nth-last-child(1){
+    position: relative;
+    bottom: 50px;
+    left: 15px;
+}
+
+/* who we are */
+
+
+/* services */
+.services{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.service-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem 0;
+    color: var(--gray-color);
+}
+.service-box i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    color: var(--gray-color);
+    border-radius: 100%;
+    font-size: 3rem;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid rgb(134, 142, 150,0.2);
+}
+/* services */
+
+
+
+/* guide */
+
+#guide{
+    margin-top: 5rem;
+    width: 100%;
+    height: 300px;
+    background: url(image/landscape-5.jpg) no-repeat center;
+    background-size: cover;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.guide{
+    color:#fff;
+}
+.guide h1 ,.guide p{
+    margin: 0.5rem 0;
+}
+
+/* guide */
+
+
+.item{
+    border: 2px solid var(--gray-color);
+    padding: 0 0.5rem;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s all;
+    overflow: hidden;
+}
+.item h2{
+    pointer-events: none;
+}
+.item.active{
+    height: auto;  
+}
+.item .item-dropdown{
+    margin: 1rem 0;
+}
+.item i{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    pointer-events: none;
 }

@@ -1,0 +1,230 @@
+:root{
+    --primary-color:#006666;
+    --text-color:#231f20;
+    --secondary-color:#996666;
+    --bg-color:#f1f1f1;
+    --box-shadow:0 2px 8px 2px rgba(0,0,0,0.2);
+}
+@font-face {
+    font-family: 'Samim';
+    src: url('src/Samim.eot');
+    src: url('src/Samim.eot?#iefix') format('embedded-opentype'),
+         url('src/Samim.woff2') format('woff2'),
+         url('src/Samim.woff') format('woff'),
+         url('src/Samim.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Samim';
+    src: url('src/Samim-Bold.eot');
+    src: url('src/Samim-Bold.eot?#iefix') format('embedded-opentype'),
+         url('src/Samim-Bold.woff2') format('woff2'),
+         url('src/Samim-Bold.woff') format('woff'),
+         url('src/Samim-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Samim';
+    src: url('src/Samim-Medium.eot');
+    src: url('src/Samim-Medium.eot?#iefix') format('embedded-opentype'),
+         url('src/Samim-Medium.woff2') format('woff2'),
+         url('src/Samim-Medium.woff') format('woff'),
+         url('src/Samim-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+    border: 0;
+    font-family: 'Samim' , sans-serif;
+}
+body{
+    direction: rtl;
+}
+img{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    max-width: 992px;
+    margin: 0 auto;
+}
+.container-fluid{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    height: 2.8rem;
+    padding: 0 4rem;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: 0.3s all;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+}
+.btn-primary{
+    background-color: #006666;
+    color: #fff;
+}
+.btn-primary:hover{
+    background-color: #005353;
+}
+.btn-primary:focus{
+    box-shadow: 0 0 0 3px #018a8a69;
+}
+.btn-secondary{
+    background-color: #996666;
+    color: #fff;
+}
+.btn-secondary:hover{
+    background-color: #b97e7e;
+}
+.btn-secondary:focus{
+    box-shadow: 0 0 0 3px #b97e7e5b;
+}
+.btn-white{
+    background-color: #fff;
+    border: 1px solid #111;
+    color: #111;
+}
+.btn-white:hover{
+    background-color: #111;
+    color: #fff;
+}
+.btn-white:focus{
+    background-color: #111;
+    color: #fff;
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.2);
+}
+.btn-black{
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #111;
+}
+.btn-black:hover{
+    background-color: #fff;
+    color: #111;
+}
+.btn-black:focus{
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.2);
+}
+.toggle-menu{
+    width: 34px;
+    height: 34px;
+    font-size: 1.5rem;
+    background-color: transparent;
+    cursor: pointer;
+    color: #fff;
+}
+.w-sm{
+    width: 24px;
+}
+.w-md{
+    width: 48px;
+}
+.w-lg{
+    width: 86px;
+}
+.convert-white{
+    filter: invert(1);
+}
+
+#intro{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/landscape-5.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.overlay-b4{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100vh;
+}
+header{
+    background-color: transparent;
+    transition: 0.3s;
+    padding: 2rem 1rem;
+}
+.header-position{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+header > .container-fluid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav{
+    width: 95%;
+    height: 0;
+    max-height: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    transition: 0.3s;
+}
+.show{
+    height: 300px;
+    font-size: 1.3rem;
+    border-radius: 4px;
+}
+.show li{
+    margin: 1rem 1rem;
+}
+.show li a{
+    color: var(--text-color);
+}
+
+.toggle-mod{
+    width: 34px;
+    height: 34px;
+    font-size: 1.5rem;
+    background-color: transparent;
+    cursor: pointer;
+    color: #fff;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.intro-logotype{
+    width: 60%;
+    max-width: 400px;
+    filter: invert(1);
+    margin: 1rem 0;
+}
+.intro p{
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 1rem 0;
+    text-align: center;
+}
